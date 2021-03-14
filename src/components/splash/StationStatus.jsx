@@ -44,7 +44,6 @@ class StationStatus extends React.Component{
             } else {
                 colorDocks = 'green'
             }
-            console.log(rentalMethods, stationName, station, methods)
             return(
                 <div className="station-container">
                     <div className='info-container'>

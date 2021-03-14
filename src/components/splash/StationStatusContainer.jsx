@@ -3,7 +3,6 @@ import { fetchStationsStatus, receiveStationStatus } from '../actions/stations_a
 import StationStatus from './StationStatus';
 
 const mapStateToProps = (state, ownProps) => {
-    console.log("STATE FROM STATUS CONTAINER", state)
     let status = state.status.length !== 0 ? Object.values(state.status) : [];
     let station = state.station.length !== 0 ? state.station : [];
     if (!ownProps.location.state) {
