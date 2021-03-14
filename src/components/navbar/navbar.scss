@@ -1,0 +1,47 @@
+.nav-container{
+    background: #008080;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1.5rem 0.8rem;
+    position:absolute;
+    top:0;
+    width:100%;
+    .logo-box{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            cursor: pointer;
+        }
+        .icon{
+            height:2.4rem;
+            width:2.4rem;;
+            margin-right:5px;
+            svg{
+                height:100%;
+                width:100%;
+            }
+        }
+        span{
+            letter-spacing: 1px;
+            font-weight:700;
+            font-size:1.4rem;
+        }
+    }
+    .info-box{
+        a{
+            font-size:1.1rem;
+            text-decoration: none;
+            color:white;
+            &:hover{
+                cursor: pointer;
+            }
+
+        }
+        //  @media(max-width: 768px){
+        //    display:none;
+        // }
+    }
+}

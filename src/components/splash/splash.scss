@@ -1,0 +1,90 @@
+.splash-container{
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    .header-container{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        width:75vw;
+        margin-bottom: 1rem;
+        @media(max-width: 768px){
+            flex-direction: column;
+            align-items: flex-start;
+            width:95vw;
+        }
+        .title{
+            font-size: 1.8rem;
+            @media(max-width: 768px){
+                margin-bottom:1rem;
+            }
+        }
+        .buttons-box{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            button{
+                background: white;
+                padding:5px 8px;
+                margin-left:10px;
+                border-radius: 16px;
+                border: 2px solid black;
+                font-size: 1.2rem;
+                transition: all ease-out 0,2s;
+                outline: none;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                @media(max-width: 768px){
+                    margin-left: 0;
+                    margin-right:10px;
+                }
+                &:hover{
+                    color: #008080;
+                    border: 2px solid #008080;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .stations-container{
+        height:70vh;
+        @media(max-width: 768px){
+            height:60vh;
+        }
+        .stations-box{
+            border: 2px solid black;
+            height:100%;
+            width:75vw;
+            overflow: scroll;
+            padding:10px;
+            @media(max-width: 768px){
+                width:95vw;
+            }
+            .stations{
+                overflow-y: hidden;
+                overflow: hidden;
+                .station{
+                    padding:10px;
+                    border-left:4px solid white;
+                    transition: all ease-out 0,2s;
+                    &:hover{
+                        border-left:4px solid #008080;
+                        cursor: pointer;
+                        background: #f5f5f5;
+                    }
+                    .name-addr{
+                        font-weight: bold;
+                        font-size: 1.2rem;
+                    }
+                    .capacity{
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+}
