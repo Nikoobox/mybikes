@@ -22,7 +22,6 @@ class StationStatus extends React.Component{
     }
 
     render(){
-        // console.log("########## from status component", this.props)
         if(!this.props.station){
             return <Loading/>
         }else{

@@ -4,6 +4,8 @@ import Navbar from './navbar/Navbar';
 import Footer from './footer/Footer';
 import StationsContainer from './splash/StationsContainer';
 import StationStatusContainer from './splash/StationStatusContainer';
+
+
 const App = () => (
     <div className='app'>
         <Navbar />
